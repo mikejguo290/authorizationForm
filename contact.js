@@ -28,11 +28,6 @@ class Contact extends React.Component {
         </form>
         );
     const ContactInfo=(
-        
-    )
-    return (
-      <div id="authorization">
-        <h1>{this.state.auhorized===true? 'Contact': 'Enter the Password'}</h1>
         <ul>
           <li>
             client@example.com
@@ -41,6 +36,11 @@ class Contact extends React.Component {
             555.555.5555
           </li>
         </ul>
+    );
+
+    return (
+      <div id="authorization">
+        <h1>{this.state.auhorized===true? 'Contact': 'Enter the Password'}</h1>
       </div>
     );
   }
