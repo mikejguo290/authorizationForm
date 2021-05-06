@@ -27,6 +27,9 @@ class Contact extends React.Component {
             <input type="submit"/>
         </form>
         );
+    const ContactInfo=(
+        
+    )
     return (
       <div id="authorization">
         <h1>{this.state.auhorized===true? 'Contact': 'Enter the Password'}</h1>
