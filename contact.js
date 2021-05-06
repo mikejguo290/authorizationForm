@@ -12,6 +12,7 @@ class Contact extends React.Component {
   }
 
   authorize(e) {
+      // event handler for for submission. checks whether the submitted password is equal to 'swordfish' and sets the state's authorized property to true if so.
     const password = e.target.querySelector(
       'input[type="password"]').value;
     const auth = password == this.state.password;
@@ -22,7 +23,7 @@ class Contact extends React.Component {
 
   render() {
     const login = (
-        <form action="#">
+        <form action="#" onSubmit={this.authorize}>
             <input type="password" placeholder="password"/>
             <input type="submit"/>
         </form>
